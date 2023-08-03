@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         RuleOne ruleOne = new RuleOne(true, Collections.emptySet());
-        RuleTwo ruleTwo = new RuleTwo(true, Collections.singleton("RuleOne"));
+        RuleTwo ruleTwo = new RuleTwo(true, Collections.emptySet());
         RuleThree ruleThree = new RuleThree(true, Collections.singleton("RuleTwo"));
 
         List<RuleTemplate> rules = Arrays.asList(ruleOne,ruleTwo, ruleThree);
